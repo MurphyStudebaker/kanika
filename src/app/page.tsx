@@ -3,34 +3,32 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6">
-      <div className="z-10 w-full font-mono text-md flex flex-row flex-wrap">
-        <div className="basis-1/2">
-          <div className="item rotate-6 w-{2/10} max-w-[500px] p-4">
-            <div className="polaroid">
-              <Image
-                className="object-cover w-full "
-                src="/bts_pom_2.jpg"
-                width={500}
-                height={500}
-                alt="Kanika directing two women for her film, The Pomegranate Tree"
-              />
-              <div className="caption"> </div>
-            </div>
-          </div>
-          <div className="item -rotate-6 w-fit max-w-[500px] p-4">
-            <div className="polaroid">
-              <Image
-                className="object-cover w-full "
-                src="/bts_pom_1.jpg"
-                width={500}
-                height={500}
-                alt="Kanika directing two women for her film, The Pomegranate Tree"
-              />
-              <div className="caption"> </div>
-            </div>
+      <div className="z-10 w-full font-mono text-md flex flex-row justify-evenly flex-wrap-reverse md:flex-nowrap ">
+        <div className="item rotate-6 p-4">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/bts_pom_2.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
           </div>
         </div>
-        <div className="basis-1/2 flex flex-col text-right lg:p-24 flex-1">
+        <div className="item -rotate-6 p-4">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/bts_pom_1.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+        <div className="flex flex-col text-right p-12 lg:p-24">
           <h1 className="font-black ">Kanika Vora</h1>
           <h2>award-winning director & creative in Los Angeles </h2>
           <div className="spacer h-8"></div>
@@ -53,17 +51,18 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="spacer h-24"></div>
+      <div className="spacer h-4 md:h-12"></div>
+
       <div
         id="portfolio"
-        className="max-w-5xl w-full font-mono text-sm flex flex-col gap-24"
+        className="max-w-5xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48"
       >
-        <div className="spacer h-12"></div>
         <div>
-          <h2 className="font-bold text-xl">The Pomegranate Tree</h2>
+          <div className="spacer h-4 md:h-12"></div>
+          <h2 className="font-bold text-2xl">The Pomegranate Tree</h2>
           <h3>2022 - Short Film</h3>
           <div className="spacer h-12"></div>
-          <p>
+          <p className="text-md">
             During the Partition of India in 1947, a Muslim mother, Azra, and
             her 16 year-old daughter, Saba, are searching for refuge in the
             neighborhood they once called home. Everyone turns their backs on
@@ -73,36 +72,120 @@ export default function Home() {
             them get to safety in the midst of violence and chaos.
           </p>
           <div className="spacer h-12"></div>
-          <Image
+          {/* <Image
             className="w-full object-fit max-w-[300]"
             src="/laurels.jpg"
             height={500}
             width={500}
             alt="Laurels for the film festivals and awards won by this film."
-          />
-          <div className="aspect-w-16 aspect-h-9">
-            <iframe
-              src="https://player.vimeo.com/video/681154726"
-              width="640"
-              height="360"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          /> */}
+          <div className="flex flex-col gap-6 font-black">
+            <a href="" className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6 shrink-0"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <span>
+                Fundraising Video with Interviews from Survivors of the
+                Partition
+              </span>
+            </a>
+            <a href="" className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <span>Official Trailer</span>
+            </a>
+            <a href="" className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <span>Full Film</span>
+            </a>
           </div>
         </div>
         <div>
-          <h2 className="font-bold text-xl">
-            Kappa Gamma Gamma Recruitment Video
+          <h2 className="font-bold text-2xl">
+            Chapman University Kappa Kappa Gamma Sorority Recruitment Video
           </h2>
-          <p>description</p>
-          <p>year</p>
-          <p>link</p>
+          <h3>2019</h3>
+          <div className="h-12"></div>
+          <a href="" className="flex gap-2 font-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+            <span>Watch Project</span>
+          </a>
         </div>
         <div>
-          <h2 className="font-bold text-xl">Documentary</h2>
-          <p>description</p>
-          <p>year</p>
-          <p>link</p>
+          <h2 className="font-bold text-2xl">Olympic Spirit</h2>
+          <h3>2017</h3>
+          <div className="h-12"></div>
+          <p>
+            A documentary about 2 intellectually disabled people who met through
+            the Special Olympics and fell in love.
+          </p>
+          <div className="h-12"></div>
+          <a href="" className="flex gap-2 font-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+            <span>Watch Project</span>
+          </a>
         </div>
       </div>
       <div className="spacer h-24"></div>
