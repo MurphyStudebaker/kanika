@@ -55,7 +55,7 @@ export default function Home() {
 
       <div
         id="portfolio"
-        className="max-w-5xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48"
+        className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48"
       >
         <div>
           <div className="spacer h-4 md:h-12"></div>
@@ -191,7 +191,7 @@ export default function Home() {
       <div className="spacer h-24"></div>
       <div
         id="about"
-        className="max-w-5xl w-full font-mono text-sm flex flex-col gap-6"
+        className="max-w-2xl w-full font-mono text-sm flex flex-col gap-6"
       >
         <div className="spacer h-24"></div>
         <h2 className="text-xl font-bold">About</h2>
