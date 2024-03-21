@@ -80,7 +80,7 @@ export default function Home() {
             width={500}
             alt="Laurels for the film festivals and awards won by this film."
           />
-          <div class="aspect-w-16 aspect-h-9">
+          <div className="aspect-w-16 aspect-h-9">
             <iframe
               src="https://player.vimeo.com/video/681154726"
               width="640"
