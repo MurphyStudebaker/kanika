@@ -256,7 +256,7 @@ export default function Home() {
           <div className="polaroid">
             <Image
               className="object-cover w-full "
-              src="/puzzle.JPG"
+              src="/puzzle.jpg"
               width={500}
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
