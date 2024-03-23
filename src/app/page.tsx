@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-6">
+    <main className="flex min-h-screen flex-col items-center justify-between p-6 overflow-hidden">
       <div className="z-10 w-full font-mono text-md flex flex-row justify-evenly flex-wrap-reverse md:flex-nowrap ">
         <div className="item rotate-6 p-4">
           <div className="polaroid">
@@ -71,6 +71,16 @@ export default function Home() {
             family takes Azra and Saba in despite the reprecussions and helps
             them get to safety in the midst of violence and chaos.
           </p>
+          <div className="spacer h-6"></div>
+          <p className="text-gray-600 italic">
+            Awards & Distinctions: Audience Choice Award at NFFTY, Official
+            Selection at LA Shorts International Film Festival (Oscar
+            Qualifier), Kate Hearst Award at Middlebury New Filmmakers Festival,
+            Best Emerging Director at Coronado Island Film Festival, Best
+            College Student Production at Breckenridge Film Festival, Gold Award
+            at WorldFest-Houston International Film Festival, Award of
+            Excellence at Catalina Film Festival
+          </p>
           <div className="spacer h-12"></div>
           {/* <Image
             className="w-full object-fit max-w-[300]"
@@ -80,7 +90,10 @@ export default function Home() {
             alt="Laurels for the film festivals and awards won by this film."
           /> */}
           <div className="flex flex-col gap-6 font-black">
-            <a href="" className="flex gap-2">
+            <a
+              href="https://www.youtube.com/watch?v=syqjv1US0-o&ab_channel=KanikaVora"
+              className="flex gap-2"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -100,7 +113,7 @@ export default function Home() {
                 Partition
               </span>
             </a>
-            <a href="" className="flex gap-2">
+            {/* <a href="" className="flex gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -116,8 +129,11 @@ export default function Home() {
                 />
               </svg>
               <span>Official Trailer</span>
-            </a>
-            <a href="" className="flex gap-2">
+            </a> */}
+            <a
+              href="https://vimeo.com/681154726/14b5bc9abb"
+              className="flex gap-2"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -136,13 +152,130 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap">
+        {/* <div className="item -rotate-6">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/clapper.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div> */}
+        <div className="item -rotate-3">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/ending_shot.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+        <div className="item rotate-6">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/rickshaw.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
+        <div>
+          <h2 className="font-bold text-2xl">Survivor Themed Party</h2>
+          <h3>2024</h3>
+          <div className="h-12"></div>
+          <p>
+            Designed and constructed 3 challenges for a birthday party inspired
+            by the reality-tv show Survivor.
+          </p>
+          <div className="h-12"></div>
+          {/* <a href="" className="flex gap-2 font-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+            <span>Highlight Reel</span>
+          </a> */}
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap">
+        <div className="item -rotate-6">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/balance.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+        <div className="item rotate-3">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/saw.jpg"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+        {/* <Image
+          className="object-cover w-full -rotate-6"
+          src="/blueprint.png"
+          width={500}
+          height={500}
+          alt="Kanika directing two women for her film, The Pomegranate Tree"
+        /> */}
+        <div className="item rotate-6">
+          <div className="polaroid">
+            <Image
+              className="object-cover w-full "
+              src="/puzzle.JPG"
+              width={500}
+              height={500}
+              alt="Kanika directing two women for her film, The Pomegranate Tree"
+            />
+            <div className="caption"> </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
         <div>
           <h2 className="font-bold text-2xl">
             Chapman University Kappa Kappa Gamma Sorority Recruitment Video
           </h2>
           <h3>2019</h3>
           <div className="h-12"></div>
-          <a href="" className="flex gap-2 font-black">
+          <a
+            href="https://www.youtube.com/watch?v=pwLC7fgGYco&ab_channel=KappaKappaGammaChapmanUniversity"
+            className="flex gap-2 font-black"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -169,7 +302,10 @@ export default function Home() {
             the Special Olympics and fell in love.
           </p>
           <div className="h-12"></div>
-          <a href="" className="flex gap-2 font-black">
+          <a
+            href="https://www.youtube.com/watch?v=Y0arl3Oq4rA&ab_channel=KanikaVora"
+            className="flex gap-2 font-black"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -193,7 +329,7 @@ export default function Home() {
         id="about"
         className="max-w-2xl w-full font-mono text-sm flex flex-col gap-6"
       >
-        <div className="spacer h-24"></div>
+        <div className="spacer h-12"></div>
         <h2 className="text-xl font-bold">About</h2>
         <div className="flex flex-row justify-between gap-12 flex-wrap">
           <div>
@@ -238,7 +374,7 @@ export default function Home() {
         </div>
       </div>
       <div className="spacer h-48 "></div>
-      <footer className="text-gray-500 text-xs text-left font-mono p-4">
+      <footer className="text-gray-500 text-xs font-mono p-4">
         copyright 2024 kanika vora, all rights reserved
       </footer>
     </main>
