@@ -80,13 +80,6 @@ export default function Home() {
             Excellence at Catalina Film Festival
           </p>
           <div className="spacer h-12"></div>
-          {/* <Image
-            className="w-full object-fit max-w-[300]"
-            src="/laurels.jpg"
-            height={500}
-            width={500}
-            alt="Laurels for the film festivals and awards won by this film."
-          /> */}
           <div className="flex flex-col gap-6 font-black">
             <a
               href="https://www.youtube.com/watch?v=syqjv1US0-o&ab_channel=KanikaVora"
@@ -111,7 +104,10 @@ export default function Home() {
                 Partition
               </span>
             </a>
-            {/* <a href="" className="flex gap-2">
+            <a
+              href="https://vimeo.com/926932936?share=copy"
+              className="flex gap-2"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -127,7 +123,7 @@ export default function Home() {
                 />
               </svg>
               <span>Official Trailer</span>
-            </a> */}
+            </a>
             <a
               href="https://vimeo.com/681154726/14b5bc9abb"
               className="flex gap-2"
@@ -186,6 +182,15 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="w-full max-w-4xl">
+        {/* <Image
+          className="w-full object-fit"
+          src="/laurels.jpg"
+          height={500}
+          width={500}
+          alt="Laurels for the film festivals and awards won by this film."
+        /> */}
       </div>
       <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
         <div>
