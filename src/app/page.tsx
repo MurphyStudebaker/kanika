@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 overflow-hidden">
       <div className="z-10 w-full font-mono text-md flex flex-row justify-evenly flex-wrap-reverse md:flex-nowrap ">
-        <div className="item rotate-6 p-4">
-          <div className="polaroid">
+        <div className="item p-2">
+          <div className="">
             <Image
               className="object-cover w-full "
               src="/bts_pom_2.jpg"
@@ -13,11 +13,10 @@ export default function Home() {
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
             />
-            <div className="caption"> </div>
           </div>
         </div>
-        <div className="item -rotate-6 p-4">
-          <div className="polaroid">
+        <div className="item p-2">
+          <div className="">
             <Image
               className="object-cover w-full "
               src="/bts_pom_1.jpg"
@@ -25,7 +24,6 @@ export default function Home() {
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
             />
-            <div className="caption"> </div>
           </div>
         </div>
         <div className="flex flex-col text-right p-12 lg:p-24">
@@ -153,7 +151,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap">
+      <div className="flex flex-row flex-wrap items-center justify-center w-full py-8 md:flex-nowrap">
         {/* <div className="item -rotate-6">
           <div className="polaroid">
             <Image
@@ -166,8 +164,8 @@ export default function Home() {
             <div className="caption"> </div>
           </div>
         </div> */}
-        <div className="item -rotate-3">
-          <div className="polaroid">
+        <div className="item">
+          <div className="p-2">
             <Image
               className="object-cover w-full "
               src="/ending_shot.jpg"
@@ -175,11 +173,10 @@ export default function Home() {
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
             />
-            <div className="caption"> </div>
           </div>
         </div>
-        <div className="item rotate-6">
-          <div className="polaroid">
+        <div className="item">
+          <div className="p-2">
             <Image
               className="object-cover w-full "
               src="/rickshaw.jpg"
@@ -187,12 +184,12 @@ export default function Home() {
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
             />
-            <div className="caption"> </div>
           </div>
         </div>
       </div>
       <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
         <div>
+          <div className="spacer h-12"></div>
           <h2 className="font-bold text-2xl">Survivor Themed Party</h2>
           <h3>2024</h3>
           <div className="h-12"></div>
@@ -220,9 +217,9 @@ export default function Home() {
           </a> */}
         </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap">
-        <div className="item -rotate-6">
-          <div className="polaroid">
+      <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap items-center">
+        <div className="item">
+          <div className="p-2">
             <Image
               className="object-cover w-full "
               src="/balance.jpg"
@@ -233,8 +230,8 @@ export default function Home() {
             <div className="caption"> </div>
           </div>
         </div>
-        <div className="item rotate-3">
-          <div className="polaroid">
+        <div className="item">
+          <div className="p-2">
             <Image
               className="object-cover w-full "
               src="/saw.jpg"
@@ -252,8 +249,8 @@ export default function Home() {
           height={500}
           alt="Kanika directing two women for her film, The Pomegranate Tree"
         /> */}
-        <div className="item rotate-6">
-          <div className="polaroid">
+        <div className="item">
+          <div className="p-2">
             <Image
               className="object-cover w-full "
               src="/puzzle.jpg"
@@ -327,23 +324,20 @@ export default function Home() {
       <div className="spacer h-24"></div>
       <div
         id="about"
-        className="max-w-2xl w-full font-mono text-sm flex flex-col gap-6"
+        className="max-w-4xl w-full font-mono text-sm flex flex-col gap-6"
       >
         <div className="spacer h-12"></div>
         <h2 className="text-xl font-bold">About</h2>
-        <div className="flex flex-row justify-between gap-12 flex-wrap">
+        <div className="flex flex-row justify-between gap-12 flex-wrap md:flex-nowrap">
           <div>
-            <div className="item -rotate-6 w-fit min-w-[300px] p-4">
-              <div className="polaroid">
-                <Image
-                  className="object-cover w-full "
-                  src="/headshot.jpeg"
-                  width={500}
-                  height={500}
-                  alt="Kanika directing two women for her film, The Pomegranate Tree"
-                />
-                <div className="caption"> </div>
-              </div>
+            <div className="item w-fit min-w-[300px]">
+              <Image
+                className="object-cover w-full "
+                src="/headshot.jpeg"
+                width={500}
+                height={500}
+                alt="Kanika directing two women for her film, The Pomegranate Tree"
+              />
             </div>
           </div>
           <div className="font-mono text-sm flex flex-col gap-6">
@@ -374,7 +368,7 @@ export default function Home() {
         </div>
       </div>
       <div className="spacer h-48 "></div>
-      <footer className="text-gray-500 text-xs font-mono p-4">
+      <footer className="text-gray-500 text-xs text-center font-mono p-4">
         copyright 2024 kanika vora, all rights reserved
       </footer>
     </main>

@@ -52,3 +52,12 @@ body {
   display: inline-block;
   margin-top: 2rem;
 } */
+
+a:hover > svg {
+  transform: translateY(-5px);
+  transition: transform 0.8s;
+}
+
+a > svg {
+  transition: transform 0.5s;
+}
