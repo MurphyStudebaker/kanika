@@ -36,7 +36,11 @@ export default function Home() {
           <ul>
             <li>kanika.vora@gmail.com</li>
             <li>
-              <a href="https://www.linkedin.com/in/kanikavora/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/kanikavora/"
+              >
                 linkedin.com/kanikavora
               </a>
             </li>
@@ -82,15 +86,62 @@ export default function Home() {
             Excellence at Catalina Film Festival
           </p>
           <div className="spacer h-12"></div>
-          {/* <Image
+          <Image
             className="w-full object-fit max-w-[300]"
             src="/laurels.jpg"
             height={500}
             width={500}
             alt="Laurels for the film festivals and awards won by this film."
-          /> */}
+          />
+          <div className="spacer h-4"></div>
           <div className="flex flex-col gap-6 font-black">
             <a
+              href="https://vimeo.com/926932936?share=copy"
+              className="flex gap-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <span>Official Trailer</span>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://vimeo.com/681154726/14b5bc9abb"
+              className="flex gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              <span>Full Film</span>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.youtube.com/watch?v=syqjv1US0-o&ab_channel=KanikaVora"
               className="flex gap-2"
             >
@@ -113,25 +164,10 @@ export default function Home() {
                 Partition
               </span>
             </a>
-            {/* <a href="" className="flex gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-              <span>Official Trailer</span>
-            </a> */}
             <a
-              href="https://vimeo.com/681154726/14b5bc9abb"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="/The Pomegranate Tree Marketing Plan3 Compact.pdf"
               className="flex gap-2"
             >
               <svg
@@ -140,7 +176,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-6 h-6 shrink-0"
               >
                 <path
                   strokeLinecap="round"
@@ -148,11 +184,12 @@ export default function Home() {
                   d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>
-              <span>Full Film</span>
+              <span>Marketing Plan</span>
             </a>
           </div>
         </div>
       </div>
+      <div className="spacer h-12"></div>
       <div className="flex flex-row flex-wrap justify-center w-full py-8 md:flex-nowrap">
         {/* <div className="item -rotate-6">
           <div className="polaroid">
@@ -191,14 +228,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="spacer h-4 md:h-24"></div>
       <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
         <div>
           <h2 className="font-bold text-2xl">Survivor Themed Party</h2>
           <h3>2024</h3>
           <div className="h-12"></div>
           <p>
-            Designed and constructed 3 challenges for a birthday party inspired
-            by the reality-tv show Survivor.
+            Designed and constructed muli-part challenges inspired by the
+            reality-tv show Survivor.
           </p>
           <div className="h-12"></div>
           {/* <a href="" className="flex gap-2 font-black">
@@ -225,7 +263,7 @@ export default function Home() {
           <div className="polaroid">
             <Image
               className="object-cover w-full "
-              src="/balance.jpg"
+              src="/burke.jpg"
               width={500}
               height={500}
               alt="Kanika directing two women for her film, The Pomegranate Tree"
@@ -265,6 +303,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="spacer h-4 md:h-24"></div>
+
       <div className="max-w-2xl w-full font-mono text-sm flex flex-col gap-24 md:gap-48">
         <div>
           <h2 className="font-bold text-2xl">
@@ -273,6 +313,8 @@ export default function Home() {
           <h3>2019</h3>
           <div className="h-12"></div>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.youtube.com/watch?v=pwLC7fgGYco&ab_channel=KappaKappaGammaChapmanUniversity"
             className="flex gap-2 font-black"
           >
@@ -303,6 +345,8 @@ export default function Home() {
           </p>
           <div className="h-12"></div>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.youtube.com/watch?v=Y0arl3Oq4rA&ab_channel=KanikaVora"
             className="flex gap-2 font-black"
           >
@@ -353,9 +397,8 @@ export default function Home() {
               business side of the entertainment industry. Prior to that, she
               graduated from Chapman University’s Dodge College of Film and
               Media Arts with a major in film production - emphasis on directing
-              and a minor in entrepreneurship. No matter what space she is in,
-              Kanika brings her unique style of storytelling and creativity to
-              anything she does .
+              and a minor in entrepreneurship. Kanika brings her unique style of
+              storytelling and creativity to everything she does.
             </p>
             <p>
               Kanika is passionate about telling stories that leave the audience
