@@ -199,8 +199,8 @@ export default function Home() {
           <h3>2024</h3>
           <div className="h-12"></div>
           <p>
-            Designed and constructed 3 challenges for a birthday party inspired
-            by the reality-tv show Survivor.
+            Designed and constructed challenges for a party inspired by the
+            reality-tv show Survivor.
           </p>
           <div className="h-12"></div>
           {/* <a href="" className="flex gap-2 font-black">
