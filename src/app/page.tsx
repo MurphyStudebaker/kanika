@@ -391,34 +391,42 @@ export default function Home() {
             </div>
           </div>
           <div className="font-mono text-sm flex flex-col gap-6">
+            <p>Kanika Vora is a storyteller at heart.</p>
             <p>
-              Kanika Vora is currently an Account Executive at Rogers & Cowan
-              PMK where she has spent the last 2+ years learning about the
-              business side of the entertainment industry. Prior to that, she
-              graduated from Chapman University’s Dodge College of Film and
-              Media Arts with a major in film production - emphasis on directing
-              and a minor in entrepreneurship. Kanika brings her unique style of
-              storytelling and creativity to everything she does.
+              She currently works as an Account Executive at Media Arts Lab —
+              Apple’s dedicated creative agency — where she helps bring the
+              brand to life through immersive short films for Vision Pro and
+              bespoke creative content for Apple.
             </p>
             <p>
-              Kanika is passionate about telling stories that leave the audience
-              thinking long after the credits roll. She likes to bring to light
-              stories from the past with new or unique perspectives and voices.
-              She is drawn to stories that touch on social issues, past or
-              present, through narrative and connections to the characters.
+              Before that, Kanika spent two years in entertainment PR at Rogers
+              & Cowan PMK, working on acclaimed projects like Inside Out 2 and
+              HBO’s Veep. She’s also a proud graduate of Chapman University’s
+              Dodge College of Film and Media Arts, where she majored in Film
+              Production with an emphasis in directing and minored in
+              entrepreneurship. Her thesis film, The Pomegranate Tree, received
+              wide recognition on the festival circuit, including the NFFTY
+              People’s Choice Award and a screening at the Oscar-qualifying LA
+              Shorts.
             </p>
             <p>
-              In her free time, she likes to express herself through her diverse
-              hobbies of playing the guitar, snowboarding, painting, going to
-              music festivals, and building challenges/ throwing parties based
-              on Survivor, the greatest show on television.
+              Kanika is passionate about stories that resonate long after the
+              screen fades to black — stories that explore history, identity,
+              and social issues through fresh perspectives and rich
+              character-driven narratives.
+            </p>
+            <p>
+              When she’s not creating, you can find her playing guitar,
+              snowboarding, at music festivals, or designing elaborate
+              challenges and themed parties inspired by Survivor—the greatest
+              show on television.
             </p>
           </div>
         </div>
       </div>
       <div className="spacer h-48 "></div>
       <footer className="text-gray-500 text-xs font-mono p-4">
-        copyright 2024 kanika vora, all rights reserved
+        copyright 2025 kanika vora, all rights reserved
       </footer>
     </main>
   );
